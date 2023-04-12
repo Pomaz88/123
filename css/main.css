@@ -1,0 +1,19 @@
+.container > .row:nth-child(1){
+    background-color: #1b5589;
+}
+.container > div:nth-child(1) img{
+    width: 48px;
+    margin: 8px 0;
+}
+.container > .row div:nth-child(1) > a img{
+    float: right;
+}
+
+.container > .row:nth-child(1) .col-1{
+    padding: 0;
+}
+.container > .row .col-1:nth-child(2),
+.container > .row .col-1:nth-child(3),
+.container > .row .col-1:nth-child(4){
+    text-align: center;
+}
