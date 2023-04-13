@@ -61,7 +61,7 @@
     color: gray;
     
 }
-.container .row:nth-child(4) button{
+.container .row:nth-child(4) .col-6:nth-child(1) button{
     width: 100%;
     margin-left: 5%;
     background-color: gray;
@@ -70,16 +70,82 @@
     border-radius: 5px;
     font-size: 20px;
 }
-.container .row:nth-child(4) button:hover{
+.container .row:nth-child(4) .col-6:nth-child(1) button:hover{
     border: 1px solid black;
     background-color: white;
     color: black;
 }
-.container .row:nth-child(4) .col-6:nth-child(2) p{
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 105px 17px 75px 17px 105px;
+    margin-left: 120px;
+    grid-row-gap: 6px;
+}
+.container .row:nth-child(4) .col-6:nth-child(2){
+    align-self: flex-start;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div{
     margin: 0;
     padding: 0;
 }
-.container .row:nth-child(4) .col-6:nth-child(2) img{
-    float: right;
-    width: 28px;
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div:nth-child(5n){
+    border: 1px solid black;
+    height: 24px;
+    width: 105px;
+    border-left: none;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div:nth-child(5n+1){
+    border: 1px solid black;
+    border-right: none;
+    height: 24px;
+    width: 105px;
+    margin-left: auto;
+    text-align: end;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div:nth-child(5n+2){
+    border: 1px solid black;
+    height: 17px;
+    width: 17px;
+    transform: rotate(45deg);
+    border-left: none;
+    border-bottom: none;
+    margin-left: -8.2px;
+    margin-top: 3.5px;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div:nth-child(5n-1){
+    border: 1px solid black;
+    height: 17px;
+    width: 17px;
+    margin-left: auto;
+    transform: rotate(45deg);
+    margin-right: -8.2px;
+    margin-top: 3.5px;
+    border-right: none;
+    border-top: none;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div:nth-child(5n-2) img{
+    width: 38px;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 div:nth-child(5n-2){
+    width: 75px;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 button{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    width: 100%;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.container .row:nth-child(4) .col-6:nth-child(2) .col-12 button:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
 }
